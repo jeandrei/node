@@ -17,6 +17,6 @@ services:
   mongo:
     container_name: mongo
     #vai baixar a imagem do mongo do dockerhub
-    image: mongo
+    image: mongo:4.6.2 
     ports:
       - '27017:27017'
