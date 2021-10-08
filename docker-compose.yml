@@ -16,7 +16,9 @@ services:
   #banco de dados mongodb
   mongo:
     container_name: mongo
-    #vai baixar a imagem do mongo do dockerhub
-    image: mongo:4.6.2 
+    #vai baixar a imagem do mongo do dockerhub tire o :4.1.1 se quiser baixar a última versão
+    #usando a última versão com container pode ser que o processador não seja capaz de rodar por isso deixe em container 4.1.1
+    #MongoDB 5.0+ requires a CPU with AVX support, and your current system does not appear to have that!
+    image: mongo:4.1.1
     ports:
       - '27017:27017'
