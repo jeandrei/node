@@ -1,3 +1,10 @@
+
+#IMPORTANTISSIMO - SE ESTIVER RODANDO NO PROXMOX O CONTAINER ATIVE AS OPÇÕES keyctl e Nesting
+#CASO CONTRÁRIO DARA UM ERRO 
+#Service 'app' failed to build: OCI runtime create failed: container_linux.go:380: starting container process caused: proces
+
+
+
 #DOCKERIGNORE
 #o arquivo dockerignore define o que será ignorado na criação do container, ou seja não será copiado 
 #node_modules npm-debug.log
