@@ -11,14 +11,14 @@
 #imagem que será baixada podereia ser latest mas vamos definir que queremos a versão 10
 #é bom definir a versão pois a latest sempre vai ser a última e uma atualização de versão pode 
 #ferrar com o sistema
-FROM node:10
+FROM node:12
 
 #onde o app será armazenado no container
 WORKDIR /usr/src/app
 
 #copia o arquivo package.jason no diretório do app /usr/src/app pois em package.jason é onde tem as dependencias
 #que serão instaladas com o comando npm install
-COPY package.jason ./
+COPY package*.json ./
 
 #instala o app npm install instala todas as dependências que estão no arquivo package.json
 RUN npm install
